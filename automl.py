@@ -2,7 +2,6 @@
 """
 Created on Thu Feb 18 12:32:44 2021
 
-@author: praneeth
 """
 """
 Created by: praneeth partapu
