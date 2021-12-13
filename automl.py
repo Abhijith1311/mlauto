@@ -237,9 +237,14 @@ def main():
      models_train,predictions_train,models_test,predictions_test=LazyClassifierdf(X_train, X_test, Y_train, Y_test)
      st.subheader('2. Table of Model Performance')
      st.write('Training set')
-     st.write(predictions_train)
+     st.write(predictions_train)   
+     
+     st.markdown(filedownload(predictions_train,'New_Normalized.csv'), unsafe_allow_html=True)
+
      st.write('Test set')
      st.write(predictions_test)
+     
+     st.markdown(filedownload(predictions_test,'New_Normalized.csv'), unsafe_allow_html=True)
      
 @st.cache      
 def LazyRegressordf( X_train, X_test, Y_train, Y_test):
