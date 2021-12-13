@@ -193,6 +193,7 @@ def main():
  elif choice== "LazyRegressor" and data is not None:
      df1=df # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
      X = df1.iloc[:,:-1] # Using all column except for the last column as X
+     st.write(X)
      Y = df1.iloc[:,-1]# Selecting the last column as Y
      st.markdown('**1.2. Dataset dimension**')
      st.write('X')
