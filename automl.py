@@ -191,7 +191,7 @@ def main():
                st.write(sns.pairplot(df))
                st.pyplot()
  elif choice== "LazyRegressor" and data is not None:
-     df1=df.loc[:100] # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
+     df1=df # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
      X = df1.iloc[:,:-1] # Using all column except for the last column as X
      Y = df1.iloc[:,-1]# Selecting the last column as Y
      st.markdown('**1.2. Dataset dimension**')
@@ -213,7 +213,7 @@ def main():
      st.write('Test set')
      st.write(predictions_test)
  elif choice=="LazyClassifier" and data is not None:
-     df=df.loc[:100]
+     df=df.loc[:]
      X = df.iloc[:,:-1] # Using all column except for the last column as X
      Y = df.iloc[:,-1]# Selecting the last column as Y
      st.markdown('**1.2. Dataset dimension**')
