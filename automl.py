@@ -4,7 +4,7 @@ Created on Thu Feb 18 12:32:44 2021
 
 """
 """
-Created by: praneeth partapu
+
 """
 
 import streamlit as st
