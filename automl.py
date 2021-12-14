@@ -212,12 +212,10 @@ def main():
      st.write('Training set')
      st.write(predictions_train)
      
-     st.markdown(filedownload(predictions_train,'Train.csv'), unsafe_allow_html=True)
-
+     
      st.write('Test set')
      st.write(predictions_test)
-     
-     st.markdown(filedownload(prediction_test,'Test.csv'), unsafe_allow_html=True)
+
  elif choice=="LazyClassifier" and data is not None:
      df=df.loc[:500]
      X = df.iloc[:,:-1] # Using all column except for the last column as X
@@ -238,13 +236,11 @@ def main():
      st.subheader('2. Table of Model Performance')
      st.write('Training set')
      st.write(predictions_train)   
-     
-     st.markdown(filedownload(predictions_train,'Train.csv'), unsafe_allow_html=True)
+
 
      st.write('Test set')
      st.write(predictions_test)
-     
-     st.markdown(filedownload(predictions_test,'Test.csv'), unsafe_allow_html=True)
+    
      
 @st.cache      
 def LazyRegressordf( X_train, X_test, Y_train, Y_test):
