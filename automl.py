@@ -49,7 +49,7 @@ def main():
      dft=df.iloc[:,:-1]
      st.success("Data File Uploaded Successfully")
  else:
-     st.warning("Waiting for user to upload the cse file")
+     st.warning("Waiting for user to upload the csv file")
  
  
  if choice == 'ExploringDataAnalysis' and data is not None:
