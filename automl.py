@@ -217,7 +217,7 @@ def main():
      st.write(predictions_test)
 
  elif choice=="LazyClassifier" and data is not None:
-     df=df.loc[:500]
+     df=df.loc[:100]
      X = df.iloc[:,:-1] # Using all column except for the last column as X
      Y = df.iloc[:,-1]# Selecting the last column as Y
      st.markdown('**1.2. Dataset dimension**')
