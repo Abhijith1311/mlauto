@@ -190,7 +190,7 @@ def main():
          if select_=="Pair Plot":
                st.write(sns.pairplot(df))
                st.pyplot()
- elif choice== "LazyRegressor" and data is not None:
+ elif choice== "Regressor" and data is not None:
      df1=df.head(500) # FOR TESTING PURPOSE, COMMENT THIS OUT FOR PRODUCTION
      X = df1.iloc[:,:-1] # Using all column except for the last column as X
      st.write('X')
@@ -216,7 +216,7 @@ def main():
      st.write('Test set')
      st.write(predictions_test)
 
- elif choice=="LazyClassifier" and data is not None:
+ elif choice=="Classifier" and data is not None:
      df=df.loc[:100]
      X = df.iloc[:,:-1] # Using all column except for the last column as X
      Y = df.iloc[:,-1]# Selecting the last column as Y
