@@ -36,7 +36,7 @@ def main():
  st.image(img,use_column_width=True,caption='EDA') 
  st.sidebar.title("")
  data = st.sidebar.file_uploader("Upload Dataset", type=['csv'])
- activites = ["ExploringDataAnalysis","Normalization","Pandas-Profiling","Data Visualization","LazyRegressor","LazyClassifier"]
+ activites = ["ExploringDataAnalysis","Normalization","Pandas-Profiling","Data Visualization","Regressor","Classifier"]
  choice = st.sidebar.selectbox("Select Actvity", activites)
  global df
  if data is not None:
